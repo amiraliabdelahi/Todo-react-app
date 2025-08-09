@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-align: center; */
+  min-height: 100vh;
+  font-family: "Poppins";
+}
+
+button, input {
+  font-family: "Poppins";
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 14px 20px;
+  font-size: 14pt;
+
+}
+.container {
+  background: #fff;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+}
+.container .task-list {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .task-list .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebeb;
+  padding: 0 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.container .task-list .card .icons-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.container .task-list .card .icons-container p {
+  user-select: none; /* Make text unselectable */
+  cursor: pointer;
+}
+.container .todo-form {
+  display: flex;
+  gap: 10px;
+}
+.container .todo-form input {
+  background: #ebebeb;
+}
+.container .todo-form button {
+  color: #fff;
+  background: #b700ff;
+  transition: all .2s ease-in-out;
+  font-weight: 500;
+}
+.container .todo-form button:hover {
+  background: #c634ff;
+
+}
+.container .task-list .todo-edit-form {
+  display: flex;
+  /* gap: 10px; */
+  /* margin: 40px 0; */
+}
+.container .task-list .todo-edit-form input {
+  background: #ebebeb;
+
+}
+.container .task-list .todo-edit-form button {
+  color: #fff;
+  background: #b700ff;
+  transition: all .2s ease;
+  font-weight: 500;
+}
+.title{
+  font-size: 14pt;
+}
+.completed-title {
+  font-size: 14pt;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
