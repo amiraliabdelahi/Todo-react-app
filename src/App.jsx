@@ -8,7 +8,7 @@ function App() {
     <div className="space-y-6 select-none">
       <CreateColumn addColumn={addColumn} />
       <hr className="opacity-10" />
-      <main className="grid grid-cols-4 justify-center items-start gap-5">
+      <main className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-center items-start gap-5">
         {state.columns.map((column) => (
           <Column column={column} />
         ))}
